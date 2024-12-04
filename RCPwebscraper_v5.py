@@ -18,6 +18,7 @@ while 1 > 0:
             print("No data found.")
     except requests.RequestException as e:
         print(f"Error fetching data: {e}")
+    print("scan")
     if check != approval:
         check = approval
         discord_webhook_url = 'https://discord.com/api/webhooks/1310074976619069460/MpO-GdcE4k8cg22jHipfkvGwnBTVNA1N4q2gP_Ra50msvUhuwPtVi3yOVymxgXJlu6xw'
@@ -27,4 +28,3 @@ while 1 > 0:
             print(f"Data sent to Discord webhook successfully: {webhook_response.status_code}")
         except requests.RequestException as e:
             print(f"Error sending data to Discord webhook: {e}")
-    time.sleep(0.1)
