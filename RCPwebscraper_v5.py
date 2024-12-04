@@ -28,4 +28,3 @@ while 1 > 0:
         except requests.RequestException as e:
             print(f"Error sending data to Discord webhook: {e}")
     time.sleep(0.1)
-
